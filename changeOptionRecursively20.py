@@ -4,7 +4,7 @@
 # License: GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 # Source in https://github.com/Arthur-Milchior/anki-change-options-recursively
 # Addon number 751420631
-# Version 2.1
+# Version 2.0
 from aqt.qt import *
 from aqt.utils import  getText, tooltip,showWarning
 from aqt import mw
@@ -18,7 +18,7 @@ def switch(did):
     (depthMin,__)=getText("Which is the minimal depth to which change must be done (0 is current depth)", default="1")
     depthMin=int (depthMin)
     (depthMax,__)=getText("Which is the maximal depth to which change must be done (0 is current depth)", default="99")
-    depthMax=int (depthMax)
+    depthMin=int (depthMin)
     col = mw.col
     decks = col.decks
     for conf in decks.allConf():
