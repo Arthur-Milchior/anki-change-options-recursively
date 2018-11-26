@@ -1,9 +1,9 @@
 # Change subdeck's configuration
-Allow you to change the options of subdecks. 
+Allow you to change the options' group of subdecks. 
 ## Usage
 In the main window, on the right of add-on lines, there is a gear
-button. In this gear, a new option is added. It will ask you the name
-of the option you want to use, the depth at which this change should
+button. In this gear, a new line is added. It will ask you the name
+of the option's group you want to use, the depth at which this change should
 be done (0 is current deck. 1 is children decks, which is the default
 configuration. 2 Are the great-children decks, and so-on.). And at
 which depth you want change to end. (Choose 1 if you want changes to

@@ -1,1 +1,1 @@
-zip cleanDefault.zip *py README.md LICENSE addon* zipping
+zip changeOption.zip *py README.md LICENSE addon* zipping
