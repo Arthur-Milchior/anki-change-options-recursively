@@ -11,6 +11,7 @@ from aqt import mw
 from anki.hooks import addHook
 from aqt.deckbrowser import DeckBrowser
 from anki.hooks import runHook
+from anki.lang import _
 import re
 
 def switch(did):
@@ -33,14 +34,14 @@ def switch(did):
             deck=decks.get(did_)
             deck["conf"]=conf["id"]
     col.flush()
-    
+
 # def run(m,did):
 #     tooltip("showDeckOptions")
 #     a = m.addAction(_("descendant"))
 #     a.triggered.connect(lambda b, did=did: switch(m,did))
-    
 
-#addHook("showDeckOptions",run) 
+
+#addHook("showDeckOptions",run)
 def _showOptions(self, did):
     m = QMenu(self.mw)
     a = m.addAction(_("Rename"))
@@ -56,4 +57,4 @@ def _showOptions(self, did):
     runHook("showDeckOptions", m, did)
     m.exec_(QCursor.pos())
 
-DeckBrowser._showOptions=_showOptions    
+DeckBrowser._showOptions=_showOptions
